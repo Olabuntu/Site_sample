@@ -431,7 +431,7 @@ if selected == "MPO":
         
 
         button = st.button( 
-            f"Submit {len(st.session_state.get("selected_parameters", [])) } Parameters",
+            f"Submit {len(st.session_state.get('selected_parameters', [])) } Parameters",
             key=f"submit_{parameter}",
             help=f"Click to submit {parameter} input"
         )
@@ -720,7 +720,7 @@ elif selected == "Models":
                 df_new.to_csv('ptp1b_results.csv', index=False)
                 # Here you can add the logic to process the SMILES strings with the PTP1B model
             else:
-                st.error("The uploaded file must contain 2 colums  named 'ID' and 'SMILES' . Please check your file.")
+                st.error("The uploaded file must contain 2 columns  named 'ID' and 'SMILES' . Please check your file.")
         else:
             st.warning("Please upload a CSV or Excel file containing SMILES and IDs for PTP1B prediction.")
 
