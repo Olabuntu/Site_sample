@@ -3,3 +3,4 @@ pandas==1.5.3
 streamlit==1.40.1
 rdkit>=2022.03.1
 streamlit-option-menu
+scikit-learn>=1.0.0
